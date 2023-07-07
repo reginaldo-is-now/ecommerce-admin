@@ -1,4 +1,8 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {}
+require('dotenv').config();
 
-module.exports = nextConfig
+module.exports = {
+  env: {
+    CLERK_API_KEY: process.env.CLERK_API_KEY,
+  },
+};
+
